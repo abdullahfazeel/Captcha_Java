@@ -1,0 +1,46 @@
+#InstructionDarkTA .content{
+    -fx-background-color: #1e1e1e ;
+    -fx-text-fill:pink
+
+}
+
+#InstructionDarkTA {
+    -fx-text-fill: #ffffff;
+}
+#aboutDarkTA .content{
+    -fx-background-color: #1e1e1e ;
+}
+
+#aboutDarkTA {
+    -fx-text-fill: #ffffff;
+}
+#AboutTA .content{
+    -fx-background-color:  #C8C2BC ;
+}
+#AboutTA {
+    // -fx-text-fill: #ffffff;
+}
+
+#InstructionTA .content{
+         -fx-background-color:  #C8C2BC ;
+ }
+#highScoreTA {
+    -fx-text-fill: #ffffff;
+}
+#highScoreTA .content{
+-fx-background-color: #1e1e1e ;
+}
+
+#highScoreTA {
+    text-align: center;
+}
+
+#highScoreDarkTA .content{
+    -fx-background-color: #1e1e1e ;
+    -fx-text-fill:pink
+}
+
+#highScoreDarkTA {
+    -fx-text-fill: #ffffff;
+}
+

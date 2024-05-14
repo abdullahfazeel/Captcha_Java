@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="600.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Separator layoutX="110.0" layoutY="141.0" prefHeight="12.0" prefWidth="381.0" />
+      <TextArea fx:id="InstructionDarkTA" editable="false" layoutX="118.0" layoutY="160.0" prefHeight="413.0" prefWidth="371.0" style="-fx-border-width: 9;" wrapText="true" />
+      <ImageView fx:id="InstructionImage1" fitHeight="407.0" fitWidth="358.0" layoutX="131.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/PlayGameDark.PNG" />
+         </image>
+      </ImageView>
+      <Button layoutX="133.0" layoutY="14.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="335.0" style="-fx-background-color: #1e1e1e;" text="INSTRUCTIONS" textFill="WHITE">
+         <font>
+            <Font name="Candara Light" size="43.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.58" specularConstant="1.05" specularExponent="38.61" surfaceScale="1.38">
+               <bumpInput>
+                  <Shadow blurType="TWO_PASS_BOX" height="62.875" radius="32.33125" width="68.45" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="54.42">
+                     <color>
+                        <Color red="0.006099999882280827" green="0.6100000143051147" blue="0.3110658526420593" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="InstMenu" layoutX="244.0" layoutY="599.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: GREENYELLOW;" text="Main Menu">
+         <font>
+            <Font name="Calisto MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="readInstructionBTN" layoutX="223.0" layoutY="108.0" mnemonicParsing="false" onAction="#getInstructions" prefHeight="33.0" prefWidth="154.0" style="-fx-background-color: GREENYELLOW;" text="Load Instructions">
+         <font>
+            <Font name="Calisto MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

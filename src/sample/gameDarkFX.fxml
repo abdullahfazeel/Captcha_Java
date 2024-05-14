@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="600.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="286.0" layoutY="151.0">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="475.0" layoutX="48.0" layoutY="134.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="4.0" width="505.0">
+         <effect>
+            <DropShadow height="65.48" radius="35.947500000000005" spread="0.13" width="80.31">
+               <color>
+                  <Color green="0.17499999701976776" blue="0.25" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Rectangle>
+      <Pane layoutX="71.0" layoutY="154.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #1e1e1e; -fx-border-color: white;">
+         <children>
+            <ImageView fx:id="ImageV1" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB1" alignment="CENTER" contentDisplay="RIGHT" layoutX="109.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="236.0" layoutY="154.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #1e1e1e; -fx-border-color: white;">
+         <children>
+            <ImageView fx:id="ImageV2" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB2" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="403.0" layoutY="154.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #1e1e1e; -fx-border-color: white;">
+         <children>
+            <ImageView fx:id="ImageV3" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB3" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="71.0" layoutY="307.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #1e1e1e; -fx-border-color: white;">
+         <children>
+            <ImageView fx:id="ImageV4" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB4" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="236.0" layoutY="307.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #1e1e1e; -fx-border-color: white;">
+         <children>
+            <ImageView fx:id="ImageV5" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB5" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="403.0" layoutY="307.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #1e1e1e; -fx-border-color: white;">
+         <children>
+            <ImageView fx:id="ImageV6" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB6" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="71.0" layoutY="466.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #1e1e1e; -fx-border-color: white;">
+         <children>
+            <ImageView fx:id="ImageV7" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB7" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="235.0" layoutY="466.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #1e1e1e; -fx-border-color: white;">
+         <children>
+            <ImageView fx:id="ImageV8" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB8" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="403.0" layoutY="466.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #1e1e1e; -fx-border-color: white;">
+         <children>
+            <ImageView fx:id="ImageV9" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB9" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Label fx:id="toSelectLbl" layoutX="313.0" layoutY="96.0" prefHeight="17.0" prefWidth="89.0" text="___________" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="92.0" text="Select" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="readyToPlayLbl" layoutX="180.0" layoutY="630.0" text="Ready to PLAY!" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="go" layoutX="337.0" layoutY="628.0" mnemonicParsing="false" onAction="#displayImages" prefHeight="32.0" prefWidth="66.0" style="-fx-background-color: GREENYELLOW;" text="GO">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="submitBTN" layoutX="464.0" layoutY="89.0" mnemonicParsing="false" onAction="#submit" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: GREENYELLOW;" text="Submit" visible="false">
+         <font>
+            <Font name="Calisto MT" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="WHITE" layoutX="440.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Right">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="439.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wrong">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="rightLbl" layoutX="499.0" layoutY="33.0" text="____" textFill="WHITE" />
+      <Label fx:id="wrongLbl" layoutX="499.0" layoutY="57.0" text="____" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="55.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Label fx:id="scoreLbl" layoutX="74.0" layoutY="42.0" text="___" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="42.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Wrong" />
+      <Label fx:id="totalWrongLbl" layoutX="121.0" layoutY="90.0" text="____" textFill="WHITE" />
+      <Button layoutX="178.0" layoutY="4.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="217.0" style="-fx-background-color: #121212;" text="CAPTCHA" textFill="WHITE">
+         <font>
+            <Font name="Candara Light" size="40.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.58" specularConstant="1.05" specularExponent="38.61" surfaceScale="1.38">
+               <bumpInput>
+                  <Shadow blurType="TWO_PASS_BOX" height="67.05625" radius="33.376562500000006" width="68.45" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="54.42">
+                     <color>
+                        <Color green="0.8421052694320679" blue="0.42105263471603394" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

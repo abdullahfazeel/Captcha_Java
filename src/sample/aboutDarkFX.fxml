@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Separator layoutX="110.0" layoutY="155.0" prefHeight="12.0" prefWidth="381.0" />
+      <TextArea fx:id="aboutTA" editable="false" layoutX="100.0" layoutY="190.0" prefHeight="298.0" prefWidth="400.0" text="This game is developed as Semester Project  for the course Object Oriented Programming (CS -212)&#10;instructed by respected Dr. Pakeeza Akram.&#10;&#10;The group members of this project are&#10;                           Abdullah Fazeel&#10;                           Jamshaid Khalid  &#10;                           Mastora Alizada&#10;Students of 2nd Semester BSCS-10C (2020 batch)&#10;NUST School of Electrical Engineering &amp; Computer Science (SEECS)." wrapText="true">
+         <font>
+            <Font name="Calibri Light" size="17.0" />
+         </font></TextArea>
+      <Button layoutX="234.0" layoutY="547.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: GREENYELLOW;" text="Main Menu">
+         <font>
+            <Font name="Calisto MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="169.0" layoutY="45.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="264.0" style="-fx-background-color: #1e1e1e;" text="About Us" textFill="WHITE">
+         <font>
+            <Font name="Candara Light" size="50.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.58" specularConstant="1.05" specularExponent="38.61" surfaceScale="1.38">
+               <bumpInput>
+                  <Shadow blurType="TWO_PASS_BOX" height="62.875" radius="32.33125" width="68.45" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="54.42">
+                     <color>
+                        <Color red="0.006099999882280827" green="0.6100000143051147" blue="0.3110658526420593" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

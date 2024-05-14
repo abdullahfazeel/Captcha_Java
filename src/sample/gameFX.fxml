@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="600.0" style="-fx-background-color: #dddddd;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="286.0" layoutY="151.0">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Button layoutX="180.0" mnemonicParsing="false" style="-fx-background-color: #bbbbbb;" text="CAPTCHA">
+         <font>
+            <Font name="Candara Light" size="45.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="475.0" layoutX="48.0" layoutY="134.0" stroke="#6e7c7c" strokeType="OUTSIDE" strokeWidth="4.0" width="505.0" />
+      <Pane layoutX="71.0" layoutY="154.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #6e7c7c;">
+         <children>
+            <ImageView fx:id="ImageV1" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB1" alignment="CENTER" contentDisplay="RIGHT" layoutX="109.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="236.0" layoutY="154.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #6e7c7c;">
+         <children>
+            <ImageView fx:id="ImageV2" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB2" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="403.0" layoutY="154.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #6e7c7c;">
+         <children>
+            <ImageView fx:id="ImageV3" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB3" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="71.0" layoutY="307.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #6e7c7c;">
+         <children>
+            <ImageView fx:id="ImageV4" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB4" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="236.0" layoutY="307.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #6e7c7c;">
+         <children>
+            <ImageView fx:id="ImageV5" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB5" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="403.0" layoutY="307.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #6e7c7c;">
+         <children>
+            <ImageView fx:id="ImageV6" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB6" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="71.0" layoutY="466.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #6e7c7c;">
+         <children>
+            <ImageView fx:id="ImageV7" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB7" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="235.0" layoutY="466.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #6e7c7c;">
+         <children>
+            <ImageView fx:id="ImageV8" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB8" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Pane layoutX="403.0" layoutY="466.0" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #6e7c7c;">
+         <children>
+            <ImageView fx:id="ImageV9" fitHeight="130.0" fitWidth="130.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@11.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="CB9" alignment="CENTER" contentDisplay="RIGHT" layoutX="107.0" layoutY="107.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="2.0" style="-fx-border-color: green;" />
+         </children>
+      </Pane>
+      <Label fx:id="toSelectLbl" layoutX="313.0" layoutY="96.0" prefHeight="17.0" prefWidth="89.0" text="___________">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="92.0" text="Select">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="readyToPlayLbl" layoutX="180.0" layoutY="630.0" text="Ready to PLAY!">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="go" layoutX="337.0" layoutY="628.0" mnemonicParsing="false" onAction="#displayImages" prefHeight="32.0" prefWidth="66.0" style="-fx-background-color: #222831;" text="GO" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="submitBTN" layoutX="464.0" layoutY="89.0" mnemonicParsing="false" onAction="#submit" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #222831;" text="Submit" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Calisto MT" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="440.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Right">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="439.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wrong">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="rightLbl" layoutX="499.0" layoutY="33.0" text="____" />
+      <Label fx:id="wrongLbl" layoutX="499.0" layoutY="57.0" text="____" />
+      <Text layoutX="55.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Label fx:id="scoreLbl" layoutX="74.0" layoutY="42.0" text="___">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Text layoutX="42.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Wrong" />
+      <Label fx:id="totalWrongLbl" layoutX="121.0" layoutY="90.0" text="____" />
+   </children>
+</AnchorPane>

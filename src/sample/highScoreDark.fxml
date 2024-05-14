@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="600.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="415.0" layoutX="96.0" layoutY="162.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="4.0" width="421.0" />
+      <Separator layoutX="110.0" layoutY="141.0" prefHeight="12.0" prefWidth="381.0" />
+      <TextArea fx:id="highScoreDarkTA" editable="false" layoutX="300.0" layoutY="163.0" prefHeight="415.0" prefWidth="113.0" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font></TextArea>
+      <Text fill="WHITE" layoutX="230.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1st">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="227.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2nd">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="230.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3rd">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button layoutX="240.0" layoutY="609.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: GREENYELLOW;" text="Main Menu">
+         <font>
+            <Font name="Calisto MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="236.0" layoutY="109.0" mnemonicParsing="false" onAction="#showHighScore" prefHeight="33.0" prefWidth="141.0" style="-fx-background-color: GREENYELLOW;" text="Show High Score">
+         <font>
+            <Font name="Calisto MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="157.0" layoutY="10.0" mnemonicParsing="false" prefHeight="94.0" prefWidth="299.0" style="-fx-background-color: #1e1e1e;" text="High Score" textFill="WHITE">
+         <font>
+            <Font name="Candara Light" size="50.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.58" specularConstant="1.05" specularExponent="38.61" surfaceScale="1.38">
+               <bumpInput>
+                  <Shadow blurType="TWO_PASS_BOX" height="62.875" radius="32.33125" width="68.45" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="54.42">
+                     <color>
+                        <Color red="0.006099999882280827" green="0.6100000143051147" blue="0.3110658526420593" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

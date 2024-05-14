@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="413.0" prefWidth="463.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="86.0" layoutX="56.0" layoutY="53.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="253.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="86.0" layoutX="291.0" layoutY="248.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="149.0" />
+      <TextField fx:id="TFCaptcha" layoutX="108.0" layoutY="175.0" />
+      <Button layoutX="141.0" layoutY="231.0" mnemonicParsing="false" onAction="#loadSimpleCaptcha" prefHeight="34.0" prefWidth="84.0" style="-fx-background-color: #1e1e1e;" text="Load" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button layoutX="318.0" layoutY="170.0" mnemonicParsing="false" onAction="#checkCaptcha" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: #1e1e1e;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Label fx:id="captchaLbl" layoutX="81.0" layoutY="65.0" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Label fx:id="captchaCheckLbl" layoutX="339.0" layoutY="274.0" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="InstMenu" layoutX="305.0" layoutY="353.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: #1e1e1e;" text="Main Menu" textFill="WHITE">
+         <font>
+            <Font name="Calisto MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
